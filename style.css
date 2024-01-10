@@ -22,8 +22,13 @@ font-weight: 900;
 /* EN ESTE APARTADO SE CAMBIA EL COLOR DE LOS ELEMENTOS DE LA PAGINA WEB */
 :root {
     --principal: #ffffff;
-    --secundario: rgb(93, 42, 202);
+    --secundario: rgb(67, 56, 91);
     --tercero: black;
+    --color-facebook: rgb(55, 23, 197);
+    --color-twitter: rgb(74, 165, 245);
+    --color-instagram: #e46de0;
+    --color-youtube:red;
+
 }
 
 nav {
@@ -167,6 +172,73 @@ footer::before{
     top: 100%;
     width: 100%;
     background: var(--principal);
+}
+
+footer .content{
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+.content .top{
+    display: flex;
+    align-items: center;
+}
+
+.content .top .logo-details{
+    color: var(--principal);
+    font-size: 32px;
+}
+
+.content .top .media-icons{
+    display: flex;
+}
+.content .top .media-icons a{
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--principal);
+    font-size: 19px;
+    text-decoration: none;
+    line-height: 40px;
+    transition: all 0.4s ease;
+}
+
+.top .media-icons a:nth-child(1){
+    background: var(--color-facebook);
+}
+.top .media-icons a:nth-child(1):hover{
+    color: var(--color-facebook);
+    background: var(--principal);
+}
+.top .media-icons a:nth-child(2){
+    background: var(--color-twitter);
+}
+.top .media-icons a:nth-child(2):hover{
+    color: var(--color-twitter);
+    background: var(--principal);
+}
+.top .media-icons a:nth-child(3){
+    background: var(--color-instagram);
+}
+.top .media-icons a:nth-child(3):hover{
+    color: var(--color-instagram);
+    background: var(--principal);
+}
+.top .media-icons a:nth-child(4){
+    background: var(--color-youtube);
+}
+.top .media-icons a:nth-child(4):hover{
+    color: var(--color-youtube);
+    background: var(--principal);
+}
+
+footer .content .link-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 /* FOOTER */
 
