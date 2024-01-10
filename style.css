@@ -19,9 +19,17 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 font-weight: 900;
 }
+/* EN ESTE APARTADO SE CAMBIA EL COLOR DE LOS ELEMENTOS DE LA PAGINA WEB */
+:root {
+    --principal: #ffffff;
+    --secundario: rgb(93, 42, 202);
+    --tercero: black;
+}
 
 nav {
-    background-color: rgb(0, 0, 0);
+    background: var(--tercero); /*CON EL PSUDOCODIGO DE ROOT, SE PUEDE CAMBIAR
+    EL COLOR DE LOS ELEMENTOS AL INSTANTE*/
+    /*background-color: rgb(0, 0, 0);*/
     height: 100px;
     color: white;
 }
@@ -142,6 +150,17 @@ section{
     border-radius: 10px;
     object-fit: cover;
 }
+
+/* FOOTER */
+footer{
+    position: relative;
+    background: var(--secundario);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/* FOOTER */
+
 
 
 
