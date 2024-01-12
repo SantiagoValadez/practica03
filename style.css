@@ -28,6 +28,7 @@ font-weight: 900;
     --color-twitter: rgb(74, 165, 245);
     --color-instagram: #e46de0;
     --color-youtube:red;
+    --color-gris: grey;
 
 }
 
@@ -37,6 +38,9 @@ nav {
     /*background-color: rgb(0, 0, 0);*/
     height: 100px;
     color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 
 label.logo{
@@ -240,7 +244,82 @@ footer .content .link-boxes{
     display: flex;
     justify-content: space-between;
 }
+
+.content .link-boxes .box .link-name{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.link-boxes .box .link-name::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 80px;
+    background: var(--principal);
+}
+
+.content .link-boxes .box li{
+    margin: 6px 0;
+    list-style: none;
+}
+
+.content .link-boxes .box a{
+    color: var(--principal);
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.content .link-boxes .box li a::hover{
+    opacity: 1;
+    text-decoration: none;
+}
+
+footer .bottom-detail{
+    width: 100%;
+    background: var(--color-gris);
+}
+
+footer .bottom-detail .bottom-text{
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-detail .bottom-text span, .bottom-detail .bottom-text a{
+    font-size: 14px;
+    font-weight: 1000;
+    color: var(--secundario);
+    text-decoration: none;
+}
+
+@media(max-width:900px){
+    footer .content .link-boxes{
+        flex-wrap: wrap;
+    }
+    footer .content .link-boxes{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* HASTA AQUI SE QUEDO LA MEDIA QUERY DE LA CLASE DEL JUEVES 11-01-24 */
+
 /* FOOTER */
+
+#carouselExampleIndicators{
+    max-width: 1200px;
+    margin: 5% auto;
+
+}
 
 
 
